@@ -27,13 +27,13 @@ from personal1.views import blog_screen
 
 urlpatterns = [
     path('', home_screen, name=""), 
-    path("admin.html/", admin.site.urls),
-    path("index.html/", home_screen, name="home"),
-    path("about.html/", about_screen, name="about"),
-    path("contact.html/", contact_screen, name="contact"),
-    path("courses.html/", courses_screen, name="courses"),
-    path("elements/", elements_screen, name="elements"),
-    path("news.html/", news_screen, name="news"),
-    path("instructors.html/", instructors_screen, name="instructors"),
-    path("blog.html/", blog_screen, name="blog"),
+    path("admin", admin.site.urls),
+    path("index", home_screen, name="home"),
+    path("about", about_screen, name="about"),  # Corrected line
+    path("contact", contact_screen, name="contact"),
+    path("courses", courses_screen, name="courses"),
+    path("elements", elements_screen, name="elements"),
+    path("news", news_screen, name="news"),
+    path("instructors", instructors_screen, name="instructors"),
+    path("blog", blog_screen, name="blog"),
 ]
