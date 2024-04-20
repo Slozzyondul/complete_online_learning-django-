@@ -29,8 +29,8 @@ urlpatterns = [
     path('', home_screen, name=""), 
     path("admin", admin.site.urls),
     path("index", home_screen, name="home"),
-    path("about", about_screen, name="about"),  # Corrected line
-    path("contact", contact_screen, name="contact"),
+    path("about/", about_screen, name="about"),  # Corrected line
+    path("contact/", contact_screen, name="contact"),
     path("courses", courses_screen, name="courses"),
     path("elements", elements_screen, name="elements"),
     path("news", news_screen, name="news"),
